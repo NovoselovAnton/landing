@@ -3,6 +3,7 @@ margin: 0;
 border: 0;
 width: 100%;
 height: 500vh;
+z-index: 0;
 background-image: url("/home/anton/landing/image/dark_fish_skin_@2X.png");
 }
 a.buttonHeader{
@@ -345,13 +346,55 @@ height: 100vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
-align-self: center;
+align-items: center;
+z-index: 2;
+background-color: #E6EAEB;
+box-shadow: 0px 0px 30px 50px #3C3C3C inset;
+}
+.flecs{
+width: 30%;
+height: 50%	
 }
 .director{
-width: 50%;
-height: 50%;
-background-size: 100%;
-background: url("/home/anton/landing/image/4yvak.jpeg") center	no-repeat;
+width: 100%;
+height: 100%;
+background-size: cover;
+background-image:  url("/home/anton/landing/image/4yvak.jpeg");
+background-position: center;
+}
+#call{
+font-family: 'K2D', sans-serif,arial;
+font-size: 1.7em;
+display: inline;
+overflow: visible;
+text-shadow:  1px 1px 2px black, 0 0 1.2em gray;
+color: #3C3C3C;	
+margin-bottom: 2%;
+}
+.greatBtn {
+margin-top: 1%; 
+background: linear-gradient(to bottom, #0bc408 0%,#09a206 100%);
+color: #fff;
+font-size: 16px;
+text-shadow: 0 1px 0 #757575;
+padding: 4px 0 5px 0;
+cursor: pointer;
+border: 0;
+border-top: 1px solid #87c286;
+border-right: 1px solid #0e780c;
+border-left: 1px solid #0e780c;
+border-bottom: 1px solid #0e780c;
+box-shadow: 0 -1px 0 #0e780c, 0 1px 0 #fff;
+width: 150px;
+border-radius: 2px;
+}
+.greatBtn:hover{
+box-shadow: 0 -1px 10px #fff inset;
+}
+.greatBtn:active{
+box-shadow: 0 0 2px 2px #111 inset;
+color: gray;
+background-color: #1bd418;
 }
 #footer{
 
