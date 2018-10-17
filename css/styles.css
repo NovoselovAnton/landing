@@ -2,6 +2,8 @@ body{
 margin: 0;
 border: 0;
 width: 100%;
+height: 500vh;
+background-image: url("/home/anton/landing/image/dark_fish_skin_@2X.png");
 }
 a.buttonHeader{
 float: right;
@@ -68,13 +70,11 @@ position: relative;
 color: #227;
 align-self: center;
 text-shadow:  2px 2px 3px black, 0 0 1em black;
-}
-.listBG{
-background-image: url("/home/anton/landing/image/dark_fish_skin_@2X.png");	
-}
+}	
 #firstPage{
 width: 100%;
 height: 100vh;
+position: relative;
 }
 #firstImage{
 background-image: url("/home/anton/landing/image/ps.jpg");
@@ -111,8 +111,8 @@ opacity: 1;
 }
 #secondPage{
 width: 100%;
-height: 100%;
-position: absolute;
+height: 100vh;
+position: relative;
 z-index: 1;
 }
 #factory{
@@ -129,6 +129,7 @@ display: inline-block;
 position: relative;
 width: 100%;
 height: 100%;
+background-size: cover;
 }
 .first{
 grid-column:2;
@@ -157,36 +158,200 @@ color: #699;
 }
 .factoriesOne{
 background-image: url("/home/anton/landing/image/factory1.jpg");
-background-size: cover;
 grid-column: 4;
 grid-row: 2;	
 }
 .factoriesTwo{
 background-image: url("/home/anton/landing/image/factory2.jpg");
-background-size: cover;
 grid-column: 6;
 grid-row: 2;	
 }
 .factoriesThree{
 background-image: url("/home/anton/landing/image/factory3.jpg");
-background-size: cover;
 grid-column: 4;
 grid-row: 4;	
 }
 .factoriesFour{
 background-image: url("/home/anton/landing/image/factory4.jpg");
-background-size: cover;
 grid-column: 6;
 grid-row: 4;	
 }
 #thirdPage{
-
+width: 100%;
+height: 100vh;
+position: relative;
+z-index: 1;
+}
+#shop{
+display: grid;
+grid-template-columns: 3% 19% 1% 10% 2% 19% 1% 10% 2% 19% 1% 10% 3%; 
+grid-template-rows: 10px 36% 10px 11% 17px 36% 10px 11% 10px;	
+}
+.btnShop{
+cursor: pointer;
+min-width: 200px;
+padding: 15px 5px;
+text-transform: uppercase;
+background: #467;
+border: none;
+color: white;
+font-weight: 600;
+border-radius: 5px;
+box-shadow: -3px -3px 15px #224 inset;
+transition: all 0.3s;
+}
+.btnShop:hover{
+box-shadow: -3px -3px 20px #223 inset;
+color: gray;
+}
+.btnShop:active{
+box-shadow: 0 0 4px black inset;
+background: #467;
+transition: 0.1s;
+color: white;
+}
+#shopOne{
+background-image: url("/home/anton/landing/image/e45.jpg");
+grid-column: 2;
+grid-row: 2;
+background-position: center;
+}
+#shopTwo{
+background-image: url("/home/anton/landing/image/csl.jpg");
+grid-column: 6;
+grid-row: 2;
+background-position: center;
+}
+#shopThree{
+background-image: url("/home/anton/landing/image/jeep.jpg");
+grid-column: 10;
+grid-row: 2;
+background-position: center;
+}
+#shopFour{
+background-image: url("/home/anton/landing/image/moto.jpeg");
+grid-column: 2;
+grid-row: 6;
+background-position: center;
+}
+#shopFive{
+background-image: url("/home/anton/landing/image/rally.jpeg");
+grid-column: 6;
+grid-row: 6;
+background-position: center;
+}
+#shopSix{
+background-image: url("/home/anton/landing/image/z8.jpg");
+grid-column: 10;
+grid-row: 6;
+background-position: center;
+}
+.textShop{
+font-family: 'K2D', sans-serif,arial;
+font-size: 1em;
+display: inline-block;
+position: relative;
+overflow: hidden;
+text-shadow:  1px 1px 2px black, 0 0 1em gray;
+color: #699;
+}
+#textOne{
+grid-column: 4;
+grid-row: 2;
+}
+#textTwo{
+grid-column: 8;
+grid-row: 2;
+}
+#textThree{
+grid-column: 12;
+grid-row: 2;
+}
+#textFour{
+grid-column: 4;
+grid-row: 6;
+}
+#textFive{
+grid-column: 8;
+grid-row: 6;
+}
+#textSix{
+grid-column: 12;
+grid-row: 6;
+}
+#btnOne{
+grid-column: 2;
+grid-row: 4;	
+}
+#btnTwo{
+grid-column: 6;
+grid-row: 4;	
+}
+#btnThree{
+grid-column: 10;
+grid-row: 4;	
+}
+#btnFour{
+grid-column: 2;
+grid-row: 8;	
+}
+#btnFive{
+grid-column: 6;
+grid-row: 8;	
+}
+#btnSix{
+grid-column: 10;
+grid-row: 8;	
 }
 #fourthPage{
-
+width: 100%;
+height: 100vh;
+display: grid;
+grid-template-columns: 2% 50% 1% 45% 2%;
+grid-template-rows: 50% 2% 46% 2%;
+}
+.textAchievments{
+font-family: 'K2D', sans-serif,arial;
+font-size: 1.5em;
+overflow: hidden;
+text-shadow:  1px 1px 2px black, 0 0 1.2em gray;
+color: #699;
+grid-column: 4;
+grid-row: 1;
+text-indent: 1.5em;
+}
+.textAchievmentsTwo{
+font-family: 'K2D', sans-serif,arial;
+font-size: 1.5em;
+overflow: hidden;
+text-shadow:  1px 1px 2px black, 0 0 1.2em gray;
+color: #699;
+grid-column: 2/5;
+grid-row: 3;
+text-indent: 1.5em;
+}
+#achievments{
+background-image: url("/home/anton/landing/image/zmrally.jpg");
+display: inline-block;
+width: 100%;
+height: 100%;
+background-size: cover;	
+grid-column: 2;
+grid-row: 1;
 }
 #fivethPage{
-
+width: 100%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-self: center;
+}
+.director{
+width: 50%;
+height: 50%;
+background-size: 100%;
+background: url("/home/anton/landing/image/4yvak.jpeg") center	no-repeat;
 }
 #footer{
 
